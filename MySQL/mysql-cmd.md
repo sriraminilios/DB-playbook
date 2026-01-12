@@ -12,6 +12,16 @@ USE database;
 ```
 SHOW TABLES;
 ```
+## List running process
+```
+SHOW PROCESS
+```
+## List running process full SQL text
+```
+SHOW FULL PROCESS
+```
+
+
 
 
 
