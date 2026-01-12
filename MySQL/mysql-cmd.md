@@ -14,11 +14,11 @@ SHOW TABLES;
 ```
 ## List running process
 ```
-SHOW PROCESS;
+SHOW PROCESSLIST;
 ```
 ## List running process full SQL text
 ```
-SHOW FULL PROCESS;
+SHOW FULL PROCESSLIST;
 ```
 
 ## Show innodb status
