@@ -21,6 +21,11 @@ SHOW PROCESS
 SHOW FULL PROCESS
 ```
 
+## Show innodb status
+```
+SHOW ENGINE INNODB STATUS;
+```
+
 
 
 
