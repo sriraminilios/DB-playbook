@@ -1,12 +1,17 @@
-# List all databases
+# MySQL Reference Documentaion
+
+## List all databases
+'''
 SHOW DATABASES;
-
-# Use a Database
+'''
+## Use a Database
+'''
 USE database;
-
-# List all Tables
+'''
+## List all Tables
+'''
 SHOW TABLES;
-
+'''
 
 
 
