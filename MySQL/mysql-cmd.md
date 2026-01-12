@@ -1,27 +1,27 @@
 # MySQL Reference Documentaion
 
-## List all databases
+### List all databases
 ```
 SHOW DATABASES;
 ```
-## Use a Database
+### Use a Database
 ```
 USE database;
 ```
-## List all Tables
+### List all Tables
 ```
 SHOW TABLES;
 ```
-## List running process
+### List running process
 ```
 SHOW PROCESSLIST;
 ```
-## List running process full SQL text
+### List running process full SQL text
 ```
 SHOW FULL PROCESSLIST;
 ```
 
-## Show innodb status
+### Show innodb status
 ```
 SHOW ENGINE INNODB STATUS\G
 ```
