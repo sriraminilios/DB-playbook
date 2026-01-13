@@ -45,5 +45,5 @@ WHERE TABLE_SCHEMA NOT IN (
   'sys'
 )
 GROUP BY TABLE_SCHEMA
-ORDER BY size_gb DESC;
+ORDER BY size_mb DESC;
 ```
