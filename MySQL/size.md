@@ -108,3 +108,25 @@ WHERE TABLE_SCHEMA NOT IN (
 )
 ORDER BY size_mb DESC;
 ```
+
+### Get Table size in GB
+```sql
+SELECT 
+  TABLE_SCHEMA AS database_name,
+  TABLE_NAME,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024, 2) AS size_gb
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'your-db-name' -- change your db name
+AND TABLE_NAME = 'your-table-name'; -- change your table name
+```
+
+### Get Table size in MB
+```sql
+SELECT 
+  TABLE_SCHEMA AS database_name,
+  TABLE_NAME,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024, 2) AS size_mb
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'your-db-name' -- change your db name
+AND TABLE_NAME = 'your-table-name'; -- change your table name
+```
