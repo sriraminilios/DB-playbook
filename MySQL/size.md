@@ -59,7 +59,7 @@ SELECT
   TABLE_SCHEMA AS database_name,
   ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 / 1024, 2) AS size_gb
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'your_database_name' --change your DB Name
+WHERE TABLE_SCHEMA = 'your_database_name' -- change your DB Name
 GROUP BY TABLE_SCHEMA;
 ```
 
@@ -70,7 +70,7 @@ SELECT
   TABLE_SCHEMA AS database_name,
   ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 , 2) AS size_mb
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'your_database_name' --change your DB Name
+WHERE TABLE_SCHEMA = 'your_database_name' -- change your DB Name
 GROUP BY TABLE_SCHEMA;
 ```
 
