@@ -1,5 +1,7 @@
 # MySQL Reference Documentaion
 
+## Basic Mysql shell commands
+
 ### List all databases
 ```
 SHOW DATABASES;
