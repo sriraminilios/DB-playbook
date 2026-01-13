@@ -1,8 +1,9 @@
 # DB-objects-size
 
 This guide will help us to get the size of DB objects counts to get the overall picture of our DB instance.
-
-[Overall DB size GB](#overall-db-size-gb)
+|COMMANDS            |DESCRIPTION          |
+|--------------------|---------------------|
+|[Overall DB size GB]|(#overall-db-size-gb)|
 
 ### Overall DB size GB
 
