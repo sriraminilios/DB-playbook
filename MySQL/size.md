@@ -1,8 +1,10 @@
-# DB objects size
+# DB-objects-size
 
 This guide will help us to get the size of DB objects counts to get the overall picture of our DB instance.
 
-### Overall DB size-GB
+[Overall DB size GB](#overall-db-size-gb)
+
+### Overall DB size GB
 
 ```sql
 SELECT 
@@ -10,7 +12,7 @@ ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 / 1024, 2) AS total_db_size_
 FROM information_schema.TABLES;
 ```
 
-### Overall DB size-MB
+### Overall DB size MB
 
 ```sql
 SELECT 
