@@ -47,3 +47,35 @@ WHERE TABLE_SCHEMA NOT IN (
 GROUP BY TABLE_SCHEMA
 ORDER BY size_mb DESC;
 ```
+
+### Order tables by size GB
+```sql
+SELECT 
+  TABLE_SCHEMA AS database_name,
+  TABLE_NAME,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 / 1024, 3) AS size_gb
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA NOT IN (
+  'mysql',
+  'information_schema',
+  'performance_schema',
+  'sys'
+)
+ORDER BY size_gb DESC;
+```
+
+### Order tables by size MB
+```sql
+SELECT 
+  TABLE_SCHEMA AS database_name,
+  TABLE_NAME,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024, 3) AS size_mb
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA NOT IN (
+  'mysql',
+  'information_schema',
+  'performance_schema',
+  'sys'
+)
+ORDER BY size_mb DESC;
+```
