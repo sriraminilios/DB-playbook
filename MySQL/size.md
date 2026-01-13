@@ -3,6 +3,7 @@
 This guide will help us to get the size of DB objects counts to get the overall picture of our DB instance.
 
 ### Overall DB size-GB
+Get the overall user DB size in GB
 ```sql
 SELECT 
 ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 / 1024, 3) AS total_db_size_gb
@@ -10,6 +11,7 @@ FROM information_schema.TABLES;
 ```
 
 ### Overall DB size-MB
+Get the overall user DB size in MB
 ```sql
 SELECT 
 ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024, 3) AS total_db_size_mb
@@ -17,6 +19,7 @@ FROM information_schema.TABLES;
 ```
 
 ### Order DB by size GB
+List DB based on size high to low in GB
 ```sql
 SELECT 
   TABLE_SCHEMA AS database_name,
@@ -32,7 +35,8 @@ GROUP BY TABLE_SCHEMA
 ORDER BY size_gb DESC;
 ```
 
-### Order DB by size mb
+### Order DB by size GB
+List DB based on size high to low in MB
 ```sql
 SELECT 
   TABLE_SCHEMA AS database_name,
@@ -49,6 +53,7 @@ ORDER BY size_mb DESC;
 ```
 
 ### Order tables by size GB
+List Tables based on size high to low in GB
 ```sql
 SELECT 
   TABLE_SCHEMA AS database_name,
@@ -65,6 +70,7 @@ ORDER BY size_gb DESC;
 ```
 
 ### Order tables by size MB
+List Tables based on size high to low in GB
 ```sql
 SELECT 
   TABLE_SCHEMA AS database_name,
