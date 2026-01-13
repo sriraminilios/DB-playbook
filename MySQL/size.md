@@ -36,7 +36,7 @@ ORDER BY size_gb DESC;
 ```sql
 SELECT 
   TABLE_SCHEMA AS database_name,
-  ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 / 1024, 3) AS size_mb
+  ROUND(SUM(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024 , 3) AS size_mb
 FROM information_schema.TABLES
 WHERE TABLE_SCHEMA NOT IN (
   'mysql',
