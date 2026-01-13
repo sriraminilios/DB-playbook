@@ -2,15 +2,17 @@
 
 This guide will help us to get the size of DB objects counts to get the overall picture of our DB instance.
 
-<table>
-  <tr>
-    <th>Command</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    
-  </tr>
-</table>
+[overall DB Size](#overall-db-size-gb)
+[List DB Size](#order-db-by-size-gb)
+[Get DB Size](#get-db-size-in-gb)
+[List Table size](#order-tables-by-size-gb)
+[Get table size](#get-table-size-in-gb)
+
+
+
+
+
+
 
 
 ### Overall DB size GB
