@@ -12,13 +12,6 @@ This guide will help us to get the size of DB objects counts to get the overall 
 
 [Get table size](#get-table-size-in-gb)<br/>
 
-
-
-
-
-
-
-
 ### Overall DB size GB
 
 ```sql
