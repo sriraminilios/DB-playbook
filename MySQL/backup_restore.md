@@ -43,10 +43,11 @@ Simply specify the database followed by the table names.
 
 If we want to take backup only DB schema or table schema:
 
+Database:
 ```bash
 mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database > schema.sql
 ```
-
+Table:
 ```bash
 mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database table > schema.sql
 ```
