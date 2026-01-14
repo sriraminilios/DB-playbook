@@ -10,7 +10,7 @@ If you want to take a full backup i.e., all databases, procedures, routines, and
 mysqldump -u [username] -p -A -R -E --triggers --single-transaction > full_backup.sql
 ```
 
-1.-A For all databases (you can also use --all-databases)
-2.-R For all routines (stored procedures & triggers)
-3.-E For all events
-4.--single-transaction Without locking the tables i.e., without interrupting any connection (R/W).
+1.-A For all databases (you can also use --all-databases)<br>
+2.-R For all routines (stored procedures & triggers)<br>
+3.-E For all events<br>
+4.--single-transaction Without locking the tables i.e., without interrupting any connection (R/W).<br>
