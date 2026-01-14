@@ -7,6 +7,7 @@
 [List all Tables](#list-all-tables)<br>
 [Describe a Table](#describe-a-table)<br>
 [Get table schema](#get-table-schema)<br>
+[Filter non-sleep process](#filter-out-sleep-process)<br>
 [List running process](#list-running-process)<br>
 [List running process with full sql](#list-running-process-full-sql-text)<br>
 [List long running process](#list-process-based-on-time)<br>
@@ -31,6 +32,10 @@ DESC tablename;
 ### Get table schema
 ```
 SHOW CREATE TABLE tablename;
+```
+### Filter out sleep process
+```
+pager grep -v Sleep
 ```
 ### List running process
 ```
