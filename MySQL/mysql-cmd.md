@@ -14,6 +14,14 @@ USE database;
 ```
 SHOW TABLES;
 ```
+### Describe a Table
+```
+DESC tablename;
+```
+### Get table schema
+```
+SHOW CREATE TABLE tablename;
+```
 ### List running process
 ```
 SHOW PROCESSLIST;
@@ -22,7 +30,6 @@ SHOW PROCESSLIST;
 ```
 SHOW FULL PROCESSLIST;
 ```
-
 ### Show innodb status
 ```
 SHOW ENGINE INNODB STATUS\G
