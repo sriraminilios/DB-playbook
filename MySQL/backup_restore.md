@@ -16,7 +16,7 @@ mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-
 4. **--single-transaction** without locking the tables i.e., without interrupting any connection (R/W).<br>
 5. -v For verbose mode.
 
-### Databases backup
+### Database backup
 If we want to take backup of one database:
 
 ```bash 
@@ -32,9 +32,21 @@ Give the name of databases to backup as space seperated using -B option
 
 ### Table Backup 
 
-If we want to take backup of one or more tables of specified database:
+If we want to take backup of one or more tables of a specified database:
 
 ```bash
 mysqldump -h hostname -P portNumber -u username -p --single-transaction -v db tb1 tb2 > table_backup.sql
 ```
-Simply specify the database followed by the table names
+Simply specify the database followed by the table names.
+
+### Schema Backup
+
+If we want to take backup only DB schema or table schema:
+
+```bash
+mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database > schema.sql
+```
+
+```bash
+mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database table > schema.sql
+```
