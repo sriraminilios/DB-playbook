@@ -1,11 +1,11 @@
 # Backup and Restore in mysql
 This guide will help us to understand how to take logical backups in mysql and restore them.
 
--[Backup](#backup)
-    -[Full backup](#full-backup)
-    -[Database backup](#database-backup)
-    -[Table backup](#table-backup)
-    -[Schema backup](#schema-backup)
+-[Backup](#backup)<br>
+    -[Full backup](#full-backup)<br>
+    -[Database backup](#database-backup)<br>
+    -[Table backup](#table-backup)<br>
+    -[Schema backup](#schema-backup)<br>
 
 ## Backup
 ### Full backup
