@@ -7,6 +7,11 @@ This guide will help us to understand how to take logical backups in mysql and r
     - [Table backup](#table-backup)<br>
     - [Schema backup](#schema-backup)<br>
 
+- [Restore](#restore)
+    - [Restore a single Database](#restore-a-single-database)
+    - [Restore a Multiple Database](#restore-multiple-databases)
+    - [Restore Tables](#restore-tables)
+
 ## Backup
 ### Full backup
 
@@ -56,4 +61,30 @@ mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --
 Table:
 ```bash
 mysqldump -h hostname -P portNumber -u username --no-data --triggers --single-transaction -v database table > schema.sql
+```
+
+## Restore
+
+### Restore a single Database
+
+To Restore a single database simple pipe the backup file by specifying the database
+
+```bash
+mysql -h hostname -P portNumber -u username database < database.sql
+```
+
+### Restore Multiple Databases
+
+To Restore multiple databases the backup will handle the use db statement.
+
+```bash
+mysql -h hostname -P portNumber -u username < database.sql
+```
+
+### Restore tables
+
+To restore tables specify the in which database the tables need to be restored.
+
+```bash
+mysql -h hostname -P portNumber -u username database < database.sql
 ```
