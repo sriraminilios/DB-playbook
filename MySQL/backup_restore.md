@@ -18,9 +18,9 @@ mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-
 
 ### Databases backup
 
-If we want to take a backup of only specified database(s):
+If we want to take a backup of one or more specified database(s):
 
 ```bash
-mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-transaction -v -B db1 db2 db3 > db_backup.sql
+mysqldump -h hostname -P portNumber -u username -p -R -E --triggers --single-transaction -v -B db1 db2 db3 > db_backup.sql
 ```
 Give the name of databases to backup as space seperated using -B option
