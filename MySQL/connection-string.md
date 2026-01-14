@@ -4,3 +4,8 @@ This section will help us to understand how to connect to mysql instances whethe
 ```
 mysql -u username -h hostname -P portnumber databasename -p
 ```
+eg.
+```
+mysql -u sanji -h localhost -P 3306 sakila -p
+```
+In case of connecting to cloud hoststed instances use the endpoint in the hostname
