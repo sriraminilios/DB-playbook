@@ -13,4 +13,4 @@ mysqldump -u [username] -p -A -R -E --triggers --single-transaction > full_backu
 1. -A For all databases (you can also use --all-databases)<br>
 2. -R For all routines (stored procedures & triggers)<br>
 3. -E For all events<br>
-4. --single-transaction Without locking the tables i.e., without interrupting any connection (R/W).<br>
+4. **--single-transaction** Without locking the tables i.e., without interrupting any connection (R/W).<br>
