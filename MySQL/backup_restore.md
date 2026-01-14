@@ -88,5 +88,5 @@ To restore tables specify the database in which the tables need to be restored.
 ```bash
 mysql -h hostname -P portNumber -u username database < database.sql
 ```
-For more information check out the official documentaion.
-[mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
+For more information check out the official documentaion.<br>
+:link: [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
