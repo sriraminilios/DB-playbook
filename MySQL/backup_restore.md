@@ -83,7 +83,7 @@ mysql -h hostname -P portNumber -u username < database.sql
 
 ### Restore tables
 
-To restore tables specify the in which database the tables need to be restored.
+To restore tables specify the database in which the tables need to be restored.
 
 ```bash
 mysql -h hostname -P portNumber -u username database < database.sql
