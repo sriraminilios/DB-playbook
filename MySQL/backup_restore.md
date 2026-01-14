@@ -49,5 +49,5 @@ mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --
 ```
 Table:
 ```bash
-mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database table > schema.sql
+mysqldump -h hostname -P portNumber -u username --no-data --triggers --single-transaction -v database table > schema.sql
 ```
