@@ -25,7 +25,7 @@ mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-
 2. -R For all routines (stored procedures & triggers)<br>
 3. -E For all events<br>
 4. **--single-transaction** without locking the tables i.e., without interrupting any connection (R/W).<br>
-5. -v For verbose mode.
+5. -v For verbose mode [optional].
 
 ### Database backup
 If we want to take backup of one database:
