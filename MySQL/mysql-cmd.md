@@ -31,7 +31,7 @@ DESC tablename;
 ```
 ### Get table schema
 ```
-SHOW CREATE TABLE tablename;
+SHOW CREATE TABLE tablename\G
 ```
 ### Filter out sleep process
 ```
