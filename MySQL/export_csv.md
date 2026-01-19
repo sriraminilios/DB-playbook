@@ -12,3 +12,11 @@ mysql -h localhost -u sanji -p sakila -e "select * from country;" | sed "s/'/\'/
 - The "g" at the end is a modifier that means "all instance, not just first"
 - ^ Beginning of line
 - $ Means end of line
+
+```
+s/'/\'/          Replace ' with \'
+s/\t/\",\"/g     Replace all \t (tab) with ","
+s/^/\"/          at the beginning of the line place a "
+s/$/\"/          At the end of the line, place a "
+s/\n//g          Replace all \n (newline) with nothing
+```
