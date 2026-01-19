@@ -4,7 +4,12 @@
 
 ### List all databases
 
-List all of the databases that are currently available on the server
-```psql
-\l
-```
+| Description                           | Command       |
+| ---------------------------------     | ------------- |
+| List all databases                    | \l            |
+| Switch database                       | \c database   |
+| List all Tables in current Database   | \dt           |
+| Describe a specified table            | \d table      |
+| List users in Current Database        | \du           |
+
+
