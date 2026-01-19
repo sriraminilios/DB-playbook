@@ -23,11 +23,11 @@ SELECT * FROM pg_stat_activity;
 To list only active connections of a specific database.
 
 ```sql
-postgres-# SELECT * FROM pg_stat_activity WHERE datname = 'db' AND state = 'active';
+SELECT * FROM pg_stat_activity WHERE datname = 'db' AND state = 'active';
 ```
 
 To list currently executing queries.
 
 ```sql
-postgres-# SELECT * FROM pg_stat_activity WHERE state IN ('active', 'idle in transaction');
+SELECT * FROM pg_stat_activity WHERE state IN ('active', 'idle in transaction');
 ```
