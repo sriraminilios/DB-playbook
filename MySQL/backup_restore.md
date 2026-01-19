@@ -12,7 +12,7 @@ This guide will help us to understand how to take logical backups in mysql and r
     - [Restore a Multiple Database](#restore-multiple-databases)
     - [Restore Tables](#restore-tables)
 
-### Notes
+> [!NOTE]
 > Replace hostname with either the IP [10.0.0.0] or DNS hostname [database.com].
 > Default port number is 3306, replace it with specific port number.
 
