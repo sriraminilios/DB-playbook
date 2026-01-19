@@ -13,12 +13,17 @@ This guide will help us to understand how to take logical backups in mysql and r
     - [Restore Tables](#restore-tables)
 
 ## Backup
+
+#### notes
+- Replace hostname with either the IP [10.0.0.0] or DNS hostname [database.com].
+- Default port number is 3306, replace it with specific port number.
+
 ### Full backup
 
 If we want to take a full backup i.e., all databases, procedures, routines, and events without interrupting any connections: [This is not recommended for cloud based instances use specific db backup method]
 
 ```bash
-mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-transaction -v > full_backup.sql
+mysqldump -h hostname -P 3306 -u username -p -A -R -E --triggers --single-transaction -v > full_backup.sql
 ```
 
 1. -A For all databases (we can also use --all-databases)<br>
@@ -31,13 +36,13 @@ mysqldump -h hostname -P portNumber -u username -p -A -R -E --triggers --single-
 If we want to take backup of one database:
 
 ```bash 
-mysqldump -h hostname -P portNumber -u username -p -R -E --triggers --single-transaction -v database > db_backup.sql
+mysqldump -h hostname -P 3306 -u username -p -R -E --triggers --single-transaction -v database > db_backup.sql
 ```
 
 If we want to take backup of two or more specified database(s):
 
 ```bash
-mysqldump -h hostname -P portNumber -u username -p -R -E --triggers --single-transaction -v -B db1 db2 db3 > db_backup.sql
+mysqldump -h hostname -P 3306 -u username -p -R -E --triggers --single-transaction -v -B db1 db2 db3 > db_backup.sql
 ```
 Give the name of databases to backup as space seperated using -B option
 
@@ -46,7 +51,7 @@ Give the name of databases to backup as space seperated using -B option
 If we want to take backup of one or more tables of a specified database:
 
 ```bash
-mysqldump -h hostname -P portNumber -u username -p --single-transaction -v db tb1 tb2 > table_backup.sql
+mysqldump -h hostname -P 3306 -u username -p --single-transaction -v db tb1 tb2 > table_backup.sql
 ```
 Simply specify the database followed by the table names.
 
@@ -56,11 +61,11 @@ If we want to take backup only DB schema or table schema:
 
 Database:
 ```bash
-mysqldump -h hostname -P portNumber -u username -p -R -E --no-data --triggers --single-transaction -v database > schema.sql
+mysqldump -h hostname -P 3306 -u username -p -R -E --no-data --triggers --single-transaction -v database > schema.sql
 ```
 Table:
 ```bash
-mysqldump -h hostname -P portNumber -u username --no-data --triggers --single-transaction -v database table > schema.sql
+mysqldump -h hostname -P 3306 -u username --no-data --triggers --single-transaction -v database table > schema.sql
 ```
 
 ## Restore
@@ -70,7 +75,7 @@ mysqldump -h hostname -P portNumber -u username --no-data --triggers --single-tr
 To Restore a single database simple pipe the backup file by specifying the database
 
 ```bash
-mysql -h hostname -P portNumber -u username database < database.sql
+mysql -h hostname -P 3306 -u username database < database.sql
 ```
 
 ### Restore Multiple Databases
@@ -78,7 +83,7 @@ mysql -h hostname -P portNumber -u username database < database.sql
 To Restore multiple databases the backup will handle the use db statement.
 
 ```bash
-mysql -h hostname -P portNumber -u username < database.sql
+mysql -h hostname -P 3306 -u username < database.sql
 ```
 
 ### Restore tables
@@ -86,7 +91,7 @@ mysql -h hostname -P portNumber -u username < database.sql
 To restore tables specify the database in which the tables need to be restored.
 
 ```bash
-mysql -h hostname -P portNumber -u username database < database.sql
+mysql -h hostname -P 3306 -u username database < database.sql
 ```
 For more information check out the official documentaion.<br>
 :link: [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
