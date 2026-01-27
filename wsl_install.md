@@ -1,6 +1,13 @@
 # How to install WSL with ubuntu 22.04 distro in windows 11
 
+> [!NOTE]
+> You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 to use the commands below
+> [!IMPORTANT]
+> Memory & Storage: Minimum 4GB RAM (8GB recommended) and 10GB+ free storage.
+
 1. Open powershell with Run as Administrator
+
+Run the below command to install wsl
 
 ```bash
 wsl --install
