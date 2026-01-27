@@ -2,6 +2,10 @@
 
 1. Open powershell with Run as Administrator
 
+```bash
+wsl --install
+```
+
 2. You may be prompted to grant permission to continue the installation.
 
 3. You may also need to reboot your machine before installing and running any Ubuntu distro.
