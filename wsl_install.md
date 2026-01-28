@@ -67,7 +67,7 @@ wsl --install Ubuntu-22.04
 
 1. Opening the dropdown in Windows Terminal
 
-![Screenshot of terminal dropdown menu](./wsl_dropdown.png)
+![Screenshot of terminal dropdown menu](./imgs/wsl_dropdown.png)
 
 WSL should be installed in your windows.
 
