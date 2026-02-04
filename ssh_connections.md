@@ -22,3 +22,8 @@ This ssh command can be obtained from AWS EC2 instance console.
 ```bash
 chmod u+x server-name
 ```
+
+6. To connect to a server simply execute it
+```bash
+./server-name
+```
